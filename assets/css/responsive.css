@@ -1,0 +1,71 @@
+@media screen and (max-width: 1199px) {
+  .service-area .service-text .theme-button {
+    width: 80%;
+  }
+  .single-work img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Header area */
+  .header-area {
+    padding: 0 16px;
+  }
+  .header-area .navbar {
+    margin-top: 15px;
+  }
+  .header-area .navbar-nav .nav-link {
+    display: inline-block;
+    margin: 15px 0;
+  }
+  /* Hero area */
+  .hero-area {
+    padding: 70px 16px;
+  }
+  .hero-text {
+    align-items: center;
+  }
+  .hero-button {
+    margin-bottom: 20px;
+  }
+
+  /* service area */
+  .service-area {
+    padding: 80px 16px;
+  }
+  .single-service {
+    margin-bottom: 24px;
+  }
+  /* Portfolio area */
+  .work-area {
+    padding: 80px 16px;
+  }
+  .single-work {
+    margin-bottom: 24px;
+  }
+
+  /* contact area */
+  .contact-area {
+    padding: 80px 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-area {
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+  }
+  .hero-text p {
+    font-size: 18px;
+  }
+  .contact-text h2 {
+    font-size: 30px;
+  }
+  .contact-text p {
+    color: var(--textcolor);
+    margin-top: 15px;
+  }
+}

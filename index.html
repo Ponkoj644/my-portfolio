@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ce45934641.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Email Js Script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("QVHtjkDXeb1h_XzvC");
+      })();
+    </script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Resposive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header section start -->
+    <header class="header-area">
+      <!-- Navigation start-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h6>Ponkoj Mondol</h6>
+            <!-- <img src="assets/images/logo.png" class=" img-fluid" alt=""> -->
+          </a>
+          <button
+            class="navbar-toggler collapsed d-flex d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggoler-icon top-bar"></span>
+            <span class="toggoler-icon middle-bar"></span>
+            <span class="toggoler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service-area">service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Main area start -->
+    <main>
+      <!-- Hero area start -->
+      <section class="hero-area d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="hero-text">
+                <h1>Hi, I'm <span>Ponkoj Mondol</span></h1>
+                <p>Proffesional web designer and devloper</p>
+                <div class="hero-button">
+                  <a
+                    href="mailto:ponkojmondal2019@gmail.com"
+                    class="theme-button"
+                    >hire me</a
+                  >
+                  <a href="#contact" class="theme-button ms-3">contact me</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="offset-lg-1 col-lg-5">
+              <div class="hero-image">
+                <img src="assets/images/hero-img.jpg" class="w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero area end -->
+
+      <!-- Service area start -->
+      <section class="service-area" id="service-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-heading text-center">
+                <h2>service that i provide</h2>
+                <h3>My Services</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center mt-5">
+            <!-- Service one -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-service">
+                <div class="service-icon">
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+                <div class="service-text">
+                  <h3>Figma conversion</h3>
+                  <p>Convert your Figma design to HTML as your requirement.</p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/Decbase/"
+                    class="theme-button"
+                    >view more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Service two -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-service">
+                <div class="service-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="service-text">
+                  <h3>Landing page design</h3>
+                  <p>
+                    Make your Landing / Home page more stylish & eye catching.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/STRICT/"
+                    class="theme-button"
+                    >view more</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Service three -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-service">
+                <div class="service-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="service-text">
+                  <h3>Form with EmailJS</h3>
+                  <p>
+                    Validate your contact form and get notification in Email.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/Personal/"
+                    class="theme-button"
+                    >view more</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Service four -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-service">
+                <div class="service-icon">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="service-text">
+                  <h3>Responsive Design</h3>
+                  <p>
+                    Responsive your wedsite into all types of devices screen.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/Minimo/"
+                    class="theme-button"
+                    >view more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service area end -->
+
+      <!-- Work area start -->
+      <section class="work-area" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-heading text-center">
+                <h2>my recent</h2>
+                <h3>Portfolio</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5 d-flex justify-content-center">
+            <!-- work one -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-work">
+                <img src="assets/images/work1.png" />
+                <div class="layer">
+                  <h3>Landing / Home page</h3>
+                  <p></p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/Photograph/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- work two -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-work">
+                <img src="assets/images/work2.jpg" />
+                <div class="layer">
+                  <h3>E-Commerce Site</h3>
+                  <p></p>
+                  <a target="_blank" href="https://ponkoj644.github.io/S-Shop/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- work three -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-work">
+                <img src="assets/images/work3.jpg" />
+                <div class="layer">
+                  <h3>Static Website</h3>
+                  <p></p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/Flower-Shop/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- work four -->
+            <div class="col-lg-3 mt-3">
+              <div class="single-work">
+                <img src="assets/images/work4.jpg" />
+                <div class="layer">
+                  <h3>Restaurent Website</h3>
+                  <p></p>
+                  <a
+                    target="_blank"
+                    href="https://ponkoj644.github.io/Restaurant/"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- work area end -->
+
+      <!-- Contact area start -->
+      <section class="contact-area" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="section-heading text-center">
+                <h2>Stay in touch</h2>
+                <h3>Contact me</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center justify-content-center">
+            <!-- Contact details -->
+            <div class="col-lg-5 mt-5">
+              <div class="contact-text">
+                <h2 class="text-white">Getting in touch is easy!</h2>
+                <p>Do not shy! I love meeting new people.</p>
+                <!--contact one -->
+                <div class="my-contact">
+                  <div class="contact-img">
+                    <i class="fa-solid fa-street-view"></i>
+                  </div>
+                  <div class="contact-txt">
+                    <a href="#">Dhaka, Bangladesh</a>
+                  </div>
+                </div>
+                <!--contact two -->
+                <div class="my-contact">
+                  <div class="contact-img">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="contact-txt">
+                    <a href="tel:+880-1722911644">+880-1722911644</a>
+                  </div>
+                </div>
+                <!--contact three -->
+                <div class="my-contact">
+                  <div class="contact-img">
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  <div class="contact-txt">
+                    <a href="mailto:info@agency.com"
+                      >ponkojmondal2019@gmail.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- contact form -->
+            <div class="col-lg-6 offset-lg-1 mt-5">
+              <div class="contact-form">
+                <h3>write your message</h3>
+                <input
+                  type="text"
+                  id="contactName"
+                  placeholder="Full Name"
+                  class="form-control mb-3"
+                />
+                <input
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Email Addres"
+                  class="form-control mb-3"
+                />
+                <textarea
+                  id="contactMessage"
+                  rows="5"
+                  class="form-control mb-3"
+                  placeholder="Message"
+                ></textarea>
+                <!-- Error message Div -->
+                <div id="error-div"></div>
+                <!-- Error message Div -->a
+                <button type="button " class="btn ms-auto" id="submitButton">
+                  Submit Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact area end -->
+
+      <section id="prelodder-area">
+        <div class="spinner-border text-light" role="status"></div>
+      </section>
+    </main>
+    <!-- Main area end -->
+
+    <!-- Footer area start -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <ul class="social-link">
+              <li>
+                <a target="_blank" href="https://github.com/Ponkoj644">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ponkoj-mondol-97a28418b/"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.behance.net/ponkojmondal">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/ponkoj.kumar.9"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/PonkojMondol1">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/ponkoj644/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <p>Copyright &#169; <span>Ponkoj Mondol</span> 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer area end -->
+
+    <!-- Bootstrapt JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
