@@ -1,6 +1,8 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* Base CSS*/
 * {
   margin: 0;
@@ -8,12 +10,12 @@
   box-sizing: border-box;
 }
 :root {
-  --primarycolor: #ee5f37;
+  --primarycolor: #2fbf71;
   --textcolor: #f1f1f1;
 }
 
 /* 
-
+font-family: "Rubik", monospac;
 */
 /* Basic CSS */
 html {
@@ -22,8 +24,12 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
-  background-color: #262626;
+  background-color: #10101a;
+}
+.bgcolor {
+  background-color: #0b0b13;
 }
 
 /* Button */
@@ -61,17 +67,20 @@ body {
 
 /* Section heading */
 .section-heading h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   color: #afafaf;
   margin: 0;
 }
 .section-heading h3 {
-  font-size: 45px;
+  font-size: 40px;
   color: var(--textcolor);
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: relative;
+  font-family: "Rubik", monospac;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 .section-heading h3::after {
   position: absolute;
@@ -79,8 +88,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
-  width: 0px;
-  height: 5px;
+  width: 50px;
+  height: 3px;
   border-radius: 5px;
   background-color: var(--primarycolor);
   transition: 0.4s all ease-in-out;
@@ -169,7 +178,7 @@ body {
 }
 /* Navber */
 .header-area .navbar-nav .nav-link {
-  font-size: 16px;
+  font-size: 17px;
   text-transform: capitalize;
   margin-right: 10px;
   font-weight: 400;
@@ -213,7 +222,7 @@ body {
 
 .hero-area {
   min-height: calc(100vh - 88px);
-  padding: 90px 0;
+  padding: 35px 0 50px;
   position: relative;
 }
 
@@ -225,13 +234,16 @@ body {
   align-items: flex-start;
 }
 .hero-text h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--textcolor);
 }
 
 .hero-text h1 span {
   color: var(--primarycolor);
+  font-size: 65px;
+  margin-top: 15px;
+  display: inline-block;
 }
 .hero-text p {
   padding: 15px 0;
@@ -251,7 +263,7 @@ body {
   /* opacity: 0.7; */
   animation: float 6s linear infinite;
 }
-@keyframes float {
+/* @keyframes float {
   0%,
   100% {
     transform: translateY(0px);
@@ -259,7 +271,7 @@ body {
   50% {
     transform: translateY(50px);
   }
-}
+} */
 
 /* Service area CSS */
 .service-area {
@@ -273,35 +285,36 @@ body {
 
 .single-service {
   padding: 15px;
+  width: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s all ease-in-out;
   border-radius: 6px 6px 6px 6px;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: #0b0b13;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--textcolor);
 }
 
 .single-service:hover {
+  /* background-image: url(../images/work1.png); */
   transform: translateY(-5px);
   border-radius: 10px 10px 30px 30px;
+  box-shadow: rgb(171 171 171 / 24%) 0px 3px 8px;
   /* background-color: rgb(216, 216, 216); */
 }
 
 .service-icon {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
-  background-color: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
   border-radius: 50%;
   color: #fff;
   font-size: 32px;
@@ -314,7 +327,8 @@ body {
 }
 .service-text h3 {
   font-size: 25px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin: 10px 0;
   color: var(--textcolor);
   transition: 0.3s;
@@ -342,7 +356,7 @@ body {
 }
 
 .single-work {
-  min-width: 250px;
+  min-width: 100%;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -393,6 +407,8 @@ body {
 }
 .single-work h3 {
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 .single-work:hover img {
   transform: scale(1.2);
@@ -415,22 +431,26 @@ body {
   margin: 20px 0;
 }
 .contact-form {
-  padding: 50px;
-  background: #ffffff3d;
+  padding: 20px;
+  background: #2c2c2c;
   border-radius: 6px;
 }
 .contact-form h3 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 40px;
   color: var(--textcolor);
   text-transform: capitalize;
 }
 .contact-form input {
-  border: 1px solid var(--primarycolor);
+  border: transparent;
   border-radius: 6px;
   color: black;
   font-weight: 500;
+}
+.contact-area .form-control:focus:focus {
+  outline: none;
+  box-shadow: none;
 }
 .contact-form input::placeholder {
   color: black;
@@ -438,7 +458,7 @@ body {
 
 .contact-form textarea {
   background: #ffffff;
-  border: 1px solid var(--primarycolor);
+  border: transparent;
   border-radius: 6px;
   font-weight: 500;
 }
@@ -449,14 +469,14 @@ body {
   display: block;
   background-color: var(--primarycolor);
   color: var(--textcolor);
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 #error-div p {
   margin: 0;
   color: var(--textcolor);
 }
 .contact-form button:hover {
-  background-color: #e6533c;
+  background-color: #13964e;
   color: var(--textcolor);
 }
 .contact-me {
@@ -467,11 +487,12 @@ body {
   /* margin: 0 auto; */
 }
 .contact-text h2 {
-  font-size: 40px;
+  font-size: 30px;
+  text-transform: capitalize;
 }
 .contact-text p {
   color: var(--textcolor);
-  margin: 25px 0;
+  margin: 10px 0 30px;
 }
 .my-contact {
   display: flex;
@@ -480,10 +501,10 @@ body {
   margin-bottom: 15px;
 }
 .my-contact:hover .contact-img {
-  transform: translateY(-5px);
+  /* transform: translateX(5px); */
 }
 .my-contact:hover .contact-txt {
-  transform: translateY(-5px);
+  transform: translateX(5px);
 }
 .my-contact .contact-img {
   transition: 0.3s all ease-in-out;
@@ -492,11 +513,11 @@ body {
   transition: 0.3s all ease-in-out;
 }
 .contact-img i {
-  font-size: 18px;
+  font-size: 15px;
   color: var(--textcolor);
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
   background: var(--primarycolor);
   border-radius: 50%;
@@ -505,29 +526,32 @@ body {
 }
 .contact-txt a {
   text-decoration: none;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 17px;
+  /* line-height: 18px; */
   color: var(--textcolor);
+  display: inline-block;
 }
 
 /* Footer area CSS */
 .footer-area {
-  padding: 50px;
+  padding: 50px 0;
 }
 .footer-area .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .footer-area .social-link li {
   display: inline-block;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 17px;
 }
 .footer-area .social-link li a {
   background-color: var(--primarycolor);
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -544,8 +568,9 @@ body {
 .footer-area p {
   color: rgb(145, 145, 145);
   text-align: center;
-  margin-left: 20px;
-  margin-top: 15px;
+  /* margin-left: 20px; */
+  margin-top: 10px;
+  margin-right: 10px;
 }
 .footer-area p span {
   color: var(--primarycolor);
@@ -588,4 +613,8 @@ body {
 }
 #prelodder-area.page-loaded::after {
   right: -50%;
+}
+
+#error-div {
+  min-height: 24px;
 }
