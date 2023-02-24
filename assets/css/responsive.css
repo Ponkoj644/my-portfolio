@@ -1,18 +1,25 @@
 @media screen and (max-width: 1199px) {
   .service-text h3 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .hero-text h1 span {
+    font-size: 55px;
   }
   .service-area .service-text .theme-button {
     width: 80%;
   }
+  .service-area .service-text p {
+    font-size: 14px;
+  }
   .single-work img {
     width: 100%;
   }
+  .contact-text p {
+    margin: 0px 0 30px;
+  }
 }
-
 @media screen and (max-width: 991px) {
   /* Header area */
-
   .header-area {
     padding: 0 16px;
   }
@@ -34,7 +41,14 @@
   .hero-button {
     margin-bottom: 20px;
   }
-
+  .hero-image {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hero-image img {
+    width: 85% !important;
+  }
   /* service area */
   .service-area {
     padding: 80px 16px;
@@ -49,28 +63,62 @@
   .single-work {
     margin-bottom: 24px;
   }
-
+  .single-work h3 {
+    font-size: 25px;
+  }
   /* contact area */
   .contact-area {
     padding: 80px 16px;
   }
+  .contact-text {
+    padding: 30px;
+  }
+  .contact-text h2 {
+    margin-bottom: 10px;
+  }
+  .contact-text p {
+    margin: 0px 0 30px;
+  }
   .contact-form {
-    padding: 10px 5px;
-    border: 1px solid var(--primarycolor);
-    border-radius: 5px;
-    background: transparent;
-    margin-top: 20px;
+    padding: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .hero-text h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  .hero-text h1 span {
+    font-size: 55px;
+  }
+  .hero-text p {
+    padding: 0;
+    font-size: 18px;
+  }
 
-@media screen and (max-width: 500px) {
+  .contact-text {
+    padding: 25px;
+  }
+  .contact-form {
+    padding: 25px;
+  }
+  .contact-text h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contact-text p {
+    margin: 0px 0 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
   .header-area .navbar {
-    margin-top: 0;
+    margin: 0;
+    padding: 10px 0;
   }
   .hero-area {
+    min-height: calc(75vh - 88px);
     padding: 10px 16px 50px 16px;
-  }
-  .hero-area {
     text-align: center;
   }
   .hero-text h1 {
@@ -87,6 +135,7 @@
   }
   .hero-text a {
     margin-top: 0;
+    font-size: 14px;
   }
   .theme-button {
     padding: 8px 16px;
@@ -104,12 +153,12 @@
     padding: 20px 5px;
   }
   .contact-text h2 {
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 10px;
   }
   .contact-text p {
     font-size: 15px;
-    margin-top: 15px;
     text-align: center;
   }
   .contact-text a {
@@ -130,15 +179,10 @@
   }
   .hero-text h1 span {
     font-size: 32px;
-    /* margin-top: 5px; */
+    margin-top: 10px;
   }
   .hero-text p {
     font-size: 14px;
-    padding: 0;
-    margin: 5px 0;
-  }
-  .hero-button {
-    margin: 10px 0 15px;
   }
   .theme-button {
     padding: 7px 14px;
@@ -149,9 +193,14 @@
   .section-heading h3 {
     font-size: 35px;
   }
-
   .service-area {
     padding: 50px 10px;
+  }
+  .service-text h3 {
+    font-size: 20px;
+  }
+  .service-text p {
+    font-size: 13px;
   }
   .work-area {
     padding: 50px 10px;
@@ -159,36 +208,37 @@
   .contact-area {
     padding: 50px 10px;
   }
+  .contact-text {
+    padding: 10px;
+  }
   .contact-text h2 {
     font-size: 20px;
     text-align: center;
+    margin-bottom: 0;
   }
   .contact-text p {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     margin-top: 10px;
   }
   .contact-img i {
-    font-size: 15px;
+    font-size: 12px;
     color: var(--textcolor);
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 7px;
   }
   .contact-txt a {
-    font-size: 14px;
+    font-size: 13px;
   }
   .contact-form {
-    padding: 10px 5px;
-    border: 1px solid var(--primarycolor);
-    border-radius: 5px;
     background: transparent;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 10px;
   }
   .contact-form h3 {
     font-size: 20px;
-    text-align: center;
   }
   #error-div p {
     font-size: 14px;
@@ -198,7 +248,13 @@
     font-size: 14px;
     margin: 5px 0;
   }
-  .padd {
-    padding: 15px 5px;
+  .footer-area .social-link li a {
+    background-color: var(--primarycolor);
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+  }
+  .footer-area p {
+    font-size: 13px;
   }
 }
