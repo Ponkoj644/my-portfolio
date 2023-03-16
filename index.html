@@ -36,6 +36,9 @@
 
     <!-- Resposive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Header section start -->
@@ -423,11 +426,63 @@
     </footer>
     <!-- Footer area end -->
 
-    <!-- Bootstrapt JS -->
+    <!-- Back to top  -->
+    <div id="go-top" class="fa fa-arrow-up"></div>
 
+    <!-- Bootstrapt JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- My JS -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Disable Right click -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("body").bind("cut copy paste", function (e) {
+          e.preventDefault();
+        });
+        $("body").on("contextmenu", function (e) {
+          return false;
+        });
+      });
+    </script>
+
+    <!-- Back to top -->
+    <script>
+      (function ($, window, document) {
+        $.fn.goTop = function (options) {
+          var defaults = {
+            scrollTop: 100,
+            scrollSpeed: 1000,
+            fadeInSpeed: 1000,
+            fadeoutSpeed: 500,
+          };
+          var options = $.extend(defaults, options);
+          var $this = $(this);
+          $(window).on("scroll", function () {
+            if ($(window).scrollTop() > options.scrollTop) {
+              $this.fadeIn(options.fadeInSpeed);
+            } else {
+              $this.fadeOut(options.fadeoutSpeed);
+            }
+          });
+          $this.on("click", function () {
+            $("html,body").animate(
+              {
+                scrollTop: 0,
+              },
+              options.speed
+            );
+          });
+        };
+      })(jQuery, window, document);
+
+      $("#go-top").goTop({
+        scrollTop: 100,
+        scrollSpeed: 1000,
+        fadeInSpeed: 1000,
+        fadeoutSpeed: 500,
+      });
+    </script>
   </body>
 </html>

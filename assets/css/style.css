@@ -13,6 +13,16 @@
   --primarycolor: #2fbf71;
   --textcolor: #f1f1f1;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--primarycolor));
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #1b7242);
+}
 
 /* 
 font-family: "Rubik", monospac;
@@ -616,4 +626,21 @@ body {
 
 #error-div {
   min-height: 24px;
+}
+
+/* Back to top */
+#go-top {
+  display: none;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border: 2px solid var(--primarycolor);
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--primarycolor);
 }
